@@ -5,5 +5,3 @@ export function IPv4ToInt32(ip: string): number {
 
   return result
 }
-
-console.log(IPv4ToInt32('1.1.1.1'))

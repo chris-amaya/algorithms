@@ -11,7 +11,6 @@ export function humanReadable(seconds: number): string {
   seconds %= 3600
 
   const minutes = Math.floor(seconds / 60)
-
   seconds %= 60
 
   return `${padding(hours)}:${padding(minutes)}:${padding(seconds)}`

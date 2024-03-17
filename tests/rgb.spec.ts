@@ -1,6 +1,6 @@
 import { rgb } from '../src/rgb'
 
-describe('Tests', function () {
+describe('RGB', function () {
   it('Basic Tests', function () {
     expect(rgb(0, 0, 0)).toBe('000000')
     expect(rgb(0, 0, -20)).toBe('000000')
