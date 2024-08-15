@@ -12,5 +12,5 @@ module.exports = {
     "<rootDir>/node_modules/",
   ],
   coverageReporters: ["json", "html"],
-  testMatch: ["<rootDir>/tests/*.spec.ts"]
+  testMatch: ["<rootDir>/tests/**/*.spec.ts"]
 };
