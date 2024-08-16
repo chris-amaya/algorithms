@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 import inquirer from 'inquirer'
-import { mainMenu } from './mainMenu.js'
+import { mainMenu } from './mainMenu'
 
 export function createNewExercise(): void {
   inquirer

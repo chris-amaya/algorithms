@@ -1,5 +1,5 @@
-import { showWelcomeBanner } from './banner.js'
-import { mainMenu } from './mainMenu.js'
+import { showWelcomeBanner } from './banner'
+import { mainMenu } from './mainMenu'
 
 showWelcomeBanner()
 mainMenu()

@@ -1,6 +1,6 @@
 import inquirer from 'inquirer'
-import { createNewExercise } from './createExcercise.js'
-import { listAllExercises } from './listExcercises.js'
+import { createNewExercise } from './createExcercise'
+import { listAllExercises } from './listExcercises'
 import chalk from 'chalk'
 
 export function mainMenu(): void {
