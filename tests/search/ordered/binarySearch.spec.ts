@@ -1,4 +1,4 @@
-import { binarySearch } from '../src/search/ordered/binarySearch'
+import { binarySearch } from '../../../src/search/ordered/binarySearch'
 
 describe('Binary Search...', function () {
   it('should return correct number', function () {
