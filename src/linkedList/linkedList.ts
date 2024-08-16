@@ -7,20 +7,14 @@ export class LinkedList<T> {
 
   append(data: T): void {
     if (this.head === null) {
-      this.head = {
-        data,
-        next: null,
-      }
+      this.head = new Node(data)
     } else {
       let current = this.head
       while (current?.next != null) {
         current = current.next
       }
 
-      current.next = {
-        data,
-        next: null,
-      }
+      current.next = new Node(data)
     }
   }
 
@@ -42,8 +36,8 @@ export class Node<T> {
   data: T
   next: Node<T> | null
 
-  constructor(data: T) {
+  constructor(data: T, node?: Node<T>) {
     this.data = data
-    this.next = null
+    this.next = node ?? null
   }
 }
