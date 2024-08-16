@@ -30,4 +30,3 @@ export function sortByBit(arr: number[] | string[]): number[] | string[] {
   return arr
 }
 
-console.log(sortByBit([3, 8, 3, 6, 5, 7, 9, 1]))
