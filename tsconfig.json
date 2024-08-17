@@ -1,8 +1,14 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./scripts/tsconfig.scripts.json" },
-    { "path": "./src/tsconfig.src.json" },
-    { "path": "./tests/tsconfig.tests.json" }
-  ]
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "types": ["vitest/globals"],
+    "moduleResolution": "Bundler",
+    "module": "Preserve",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules"]
 }
