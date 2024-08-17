@@ -1,32 +1,42 @@
-import inquirer from 'inquirer'
+import { input, select, Separator } from '@inquirer/prompts'
 import { createNewExercise } from './createExcercise'
 import { listAllExercises } from './listExcercises'
 import chalk from 'chalk'
 
-export function mainMenu(): void {
-  inquirer
-    .prompt([
+export async function mainMenu() {
+  const OPTIONS = {
+    CREATE: 'CREATE',
+    LIST: 'LIST',
+    EXIT: 'EXIT',
+  }
+
+  const answer = await select({
+    message: 'What do you want to do?',
+    choices: [
       {
-        type: 'list',
-        name: 'action',
-        message: 'What do you want to do?',
-        choices: ['Create a new exercise', 'List all exercises', 'Exit'],
+        value: OPTIONS.CREATE,
+        name: 'Create a new exercise',
       },
-    ])
-    .then((answers: any) => {
-      switch (answers.action) {
-        case 'Create a new exercise':
-          createNewExercise()
-          break
-        case 'List all exercises':
-          listAllExercises()
-          break
-        default:
-          console.log(chalk.blue('Goodbye!'))
-          process.exit(0)
-      }
-    })
-    .catch((error) => {
-      throw new Error(String(error))
-    })
+      {
+        value: OPTIONS.LIST,
+        name: 'List all exercises',
+      },
+      {
+        value: OPTIONS.EXIT,
+        name: 'Exit',
+      },
+    ],
+  })
+
+  switch (answer) {
+    case OPTIONS.CREATE:
+      await createNewExercise()
+
+    case OPTIONS.LIST:
+      await listAllExercises()
+
+    default:
+      console.log(chalk.blue('Goodbye!'))
+      process.exit(0)
+  }
 }
