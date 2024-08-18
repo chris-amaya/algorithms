@@ -1,4 +1,4 @@
-import { sortByBit } from '../src/sortByBit'
+import { sortByBit } from 'src/sortByBit'
 
 describe('SortByBit...', function () {
   it('should sort correctly', function () {

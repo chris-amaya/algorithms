@@ -1,4 +1,4 @@
-import { LinkedList, type Node } from './linkedList'
+import { LinkedList, type Node } from '@/linkedList/linkedList'
 
 class MyLinkedList extends LinkedList<string> {
   printToArrow(list: Node<number> | null): string {

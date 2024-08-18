@@ -1,4 +1,4 @@
-import { calculateCidrNotation } from '../src/cidr'
+import { calculateCidrNotation } from 'src/cidr'
 
 describe('calculateCidrNotation...', function () {
   it('should return correct number', function () {

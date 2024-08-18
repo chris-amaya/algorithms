@@ -1,4 +1,4 @@
-import { primeFactor } from '../src/primeFactor'
+import { primeFactor } from 'src/primeFactor'
 
 describe('primeFactor', () => {
   it('Basic Test', () => {

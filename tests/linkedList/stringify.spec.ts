@@ -1,5 +1,5 @@
-import { Node } from '../../src/linkedList/linkedList'
-import { stringify } from '../../src/linkedList/stringify'
+import { Node } from 'src/linkedList/linkedList'
+import { stringify } from 'src/linkedList/stringify'
 
 describe('Stringify', () => {
   it('should return "null" for an empty linked list', () => {

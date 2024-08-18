@@ -1,4 +1,4 @@
-import { LinkedList } from '../../src/linkedList/linkedList'
+import { LinkedList } from 'src/linkedList/linkedList'
 
 describe('linked List', () => {
   it('should initialize with a head of null', () => {

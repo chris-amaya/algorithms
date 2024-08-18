@@ -1,4 +1,4 @@
-import { naiveSearch } from '../../../src/search/strings/naiveSearch'
+import { naiveSearch } from 'src/search/strings/naiveSearch'
 
 describe('Binary Search...', function () {
   it('should return correct number', function () {

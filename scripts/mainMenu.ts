@@ -1,6 +1,6 @@
-import { input, select, Separator } from '@inquirer/prompts'
-import { createNewExercise } from './createExcercise'
-import { listAllExercises } from './listExcercises'
+import { select } from '@inquirer/prompts'
+import { createNewExercise } from '@/createExcercise'
+import { listAllExercises } from '@/listExcercises'
 import chalk from 'chalk'
 
 export async function mainMenu() {

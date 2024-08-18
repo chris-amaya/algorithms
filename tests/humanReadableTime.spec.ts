@@ -1,4 +1,4 @@
-import { humanReadable } from '../src/humanReadable'
+import { humanReadable } from 'src/humanReadable'
 
 describe('humanReadableTime', function () {
   it('should format correctly', function () {

@@ -1,4 +1,4 @@
-import { rgb } from '../src/rgb'
+import { rgb } from 'src/rgb'
 
 describe('RGB', function () {
   it('Basic Tests', function () {

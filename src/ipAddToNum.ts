@@ -1,4 +1,4 @@
-import { IPv4ToInt32 } from './ipv4toInt32'
+import { IPv4ToInt32 } from '@/ipv4toInt32'
 
 export function ipToNum(ip: string): number {
   return (

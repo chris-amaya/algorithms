@@ -1,5 +1,5 @@
 import { mkdir, writeFile, readFile } from 'fs/promises'
-import { Logger } from './Logger'
+import { Logger } from '@/Logger'
 
 export class FileManager {
   static async createFolder(folderPath: string) {

@@ -1,4 +1,4 @@
-import { isLeapYear } from '../src/isLeapYear'
+import { isLeapYear } from 'src/isLeapYear'
 
 describe('Leap Year Calculation Tests', () => {
   test('Year divisible by 4 but not by 100 is a leap year', () => {

@@ -1,4 +1,4 @@
-import { IPv4ToInt32 } from '../src/ipv4toInt32'
+import { IPv4ToInt32 } from 'src/ipv4toInt32'
 
 describe('ipV4ToInt32...', function () {
   it('should return correct number', function () {
