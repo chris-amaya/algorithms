@@ -2,11 +2,10 @@ import chalk from 'chalk'
 
 // TODO: implement output to .txt files
 export class Logger {
-  static log(text: string) {
+  static success(text: string): void {
     console.log(chalk.green(text))
   }
-
-  static error(text: string) {
+  static error(text: string): void {
     console.error(chalk.red(text))
   }
 }

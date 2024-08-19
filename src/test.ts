@@ -1,0 +1,5 @@
+// link: 
+
+export function test () {
+    
+}
