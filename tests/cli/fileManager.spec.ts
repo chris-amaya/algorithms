@@ -1,7 +1,7 @@
 import { FileManager } from 'scripts/fileManager'
 import { mkdir, writeFile, readFile } from 'fs/promises'
 import { MockInstance, vi } from 'vitest'
-import { Logger } from '@/implementations/Logger'
+import { Logger } from '../../scripts/utils/Logger'
 
 vi.mock('fs/promises')
 
