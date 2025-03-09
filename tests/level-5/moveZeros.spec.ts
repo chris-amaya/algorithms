@@ -1,4 +1,4 @@
-import { moveZeros } from '../src/moveZeros';
+import { moveZeros } from '../../src/level-5/moveZeros';
 
 describe('moveZeros', () => {
     it('should move all zeros to the end of the array', () => {

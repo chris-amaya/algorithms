@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { humanReadableTime } from '../src/humanReadable.v2';
+import { humanReadableTime } from '../../src/level-5/humanReadable.v2';
 
 describe('humanReadableTime', () => {
   it('should format 0 seconds as 00:00:00', () => {

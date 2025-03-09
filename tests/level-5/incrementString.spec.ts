@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { incrementString } from '../src/incrementString';
+import { incrementString } from '../../src/level-5/incrementString';
 
 // Your job is to write a function which increments a string, to create a new string.
 
