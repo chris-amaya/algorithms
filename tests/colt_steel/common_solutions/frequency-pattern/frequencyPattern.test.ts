@@ -1,4 +1,4 @@
-import { some } from "@/colt_steel/common_solutions/frequencyPattern"
+import { some } from "@/colt_steel/common_solutions/frequency-pattern/frequencyPattern"
 
 describe('Frequency Patter', (e) => {
     test('should return false when values index mismatch', () => {

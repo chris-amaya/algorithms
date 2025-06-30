@@ -1,4 +1,4 @@
-import { isValidAnagram } from "@/colt_steel/common_solutions/anagram"
+import { isValidAnagram } from "@/colt_steel/common_solutions/frequency-pattern/anagram"
 
 
 describe("Anagram", () => {
