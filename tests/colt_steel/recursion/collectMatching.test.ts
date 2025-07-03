@@ -36,4 +36,17 @@ describe('collectMatching', () => {
     test('should handle single nested value', () => {
         expect(collectMatching([[8]], isEven)).toStrictEqual([8]);
     });
+
+    test('should collect only even numbers and ignore other types', () => {
+        const input = [
+            2,
+            "hello",
+            [4, false, [6, null, "world"]],
+            { value: 8 },
+            [10, ["not a number"]],
+            11
+        ];
+
+        expect(collectMatching(input, isEven)).toStrictEqual([2, 4, 6, 10]);
+    });
 });
