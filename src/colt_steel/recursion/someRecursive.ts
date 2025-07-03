@@ -1,3 +1,4 @@
+
 export function someRecursive(arr: number[], callback: (...rest: any) => {}): boolean {
     if(arr.length === 0) return false 
 
